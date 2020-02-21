@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InAppPuchaseTableViewCellReuse" rowHeight="60" id="KGk-i7-Jjw" customClass="InAppPuchaseTableViewCell" customModule="GigHard_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gkV-2o-D53" userLabel="separator">
+                        <rect key="frame" x="10" y="49" width="325" height="1"/>
+                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dWM-8k-8gd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_iaplogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="mN9-oV-q2J">
+                        <rect key="frame" x="10" y="10" width="50" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Yn7-Ay-s6K"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Ads" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osZ-eu-Fd0">
+                        <rect key="frame" x="70" y="0.0" width="185" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0z1-39-irc">
+                        <rect key="frame" x="265" y="17.5" width="70" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="0j5-1N-ue7"/>
+                            <constraint firstAttribute="height" constant="25" id="pmx-OA-CqI"/>
+                        </constraints>
+                        <state key="normal" title="$2.99" backgroundImage="btn_buy_blank.png">
+                            <color key="titleColor" red="0.20784313730000001" green="0.20392156859999999" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buyBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aa5-Xb-5pP"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oh-cK-TQC">
+                        <rect key="frame" x="265" y="17.5" width="70" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="5uj-bO-NB6"/>
+                            <constraint firstAttribute="height" constant="25" id="qan-Ja-KhT"/>
+                        </constraints>
+                        <state key="normal" image="btn_restore.png"/>
+                        <connections>
+                            <action selector="restoreBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gua-w8-bhC"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="0z1-39-irc" firstAttribute="leading" secondItem="osZ-eu-Fd0" secondAttribute="trailing" constant="10" id="0xa-mA-ptN"/>
+                    <constraint firstAttribute="trailing" secondItem="0z1-39-irc" secondAttribute="trailing" constant="10" id="8HR-u6-2gA"/>
+                    <constraint firstAttribute="trailing" secondItem="gkV-2o-D53" secondAttribute="trailing" constant="10" id="B0L-d8-7tR"/>
+                    <constraint firstItem="9Oh-cK-TQC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BQQ-ez-wKH"/>
+                    <constraint firstItem="gkV-2o-D53" firstAttribute="top" secondItem="mN9-oV-q2J" secondAttribute="bottom" constant="10" id="Fsz-OU-jUy"/>
+                    <constraint firstAttribute="bottom" secondItem="gkV-2o-D53" secondAttribute="bottom" constant="10" id="TBa-iK-ylv"/>
+                    <constraint firstItem="gkV-2o-D53" firstAttribute="top" secondItem="osZ-eu-Fd0" secondAttribute="bottom" constant="8" id="TP7-Ai-azr"/>
+                    <constraint firstItem="mN9-oV-q2J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="VXD-Zy-wXW"/>
+                    <constraint firstAttribute="trailing" secondItem="9Oh-cK-TQC" secondAttribute="trailing" constant="10" id="W5i-6t-2Jg"/>
+                    <constraint firstItem="osZ-eu-Fd0" firstAttribute="leading" secondItem="mN9-oV-q2J" secondAttribute="trailing" constant="10" id="Wdh-s8-3r7"/>
+                    <constraint firstItem="0z1-39-irc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dDB-jP-5dj"/>
+                    <constraint firstItem="mN9-oV-q2J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="p2U-em-DC6"/>
+                    <constraint firstItem="osZ-eu-Fd0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uaB-7V-0pq"/>
+                    <constraint firstItem="gkV-2o-D53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zcx-OD-nSA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buyBtn" destination="0z1-39-irc" id="pnT-Us-15H"/>
+                <outlet property="buyBtnWidthConstraint" destination="0j5-1N-ue7" id="lcz-Bb-6Z2"/>
+                <outlet property="iapLabel" destination="osZ-eu-Fd0" id="Goe-3L-EbR"/>
+                <outlet property="iconImgView" destination="mN9-oV-q2J" id="6TX-Hs-Jtp"/>
+                <outlet property="iconImgViewWidthContstraint" destination="Yn7-Ay-s6K" id="QYQ-we-x4Z"/>
+                <outlet property="restoreBtn" destination="9Oh-cK-TQC" id="qZe-hU-ups"/>
+                <outlet property="restoreBtnWidthConstraint" destination="5uj-bO-NB6" id="DUI-KW-ekS"/>
+            </connections>
+            <point key="canvasLocation" x="44.20289855072464" y="64.955357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_buy_blank.png" width="52" height="27.5"/>
+        <image name="btn_restore.png" width="52" height="27.5"/>
+        <image name="icon_iaplogo.png" width="52" height="40"/>
+    </resources>
+</document>

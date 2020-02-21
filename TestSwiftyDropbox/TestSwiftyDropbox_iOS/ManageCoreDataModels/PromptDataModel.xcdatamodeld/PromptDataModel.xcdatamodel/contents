@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CustomFont" representedClassName="CustomFont" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="systemName" optional="YES" attributeType="String"/>
+        <relationship name="docs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PromptDoc" inverseName="docFont" inverseEntity="PromptDoc"/>
+    </entity>
+    <entity name="DocSet" representedClassName="DocSet" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="docSetRelation" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DocSetRelation" inverseName="docSet" inverseEntity="DocSetRelation"/>
+    </entity>
+    <entity name="DocSetRelation" representedClassName="DocSetRelation" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="docSet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DocSet" inverseName="docSetRelation" inverseEntity="DocSet"/>
+        <relationship name="promptDoc" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PromptDoc" inverseName="docSetRelation" inverseEntity="PromptDoc"/>
+    </entity>
+    <entity name="PromptDoc" representedClassName="PromptDoc" syncable="YES">
+        <attribute name="docAttText" optional="YES" attributeType="Transformable" customClassName="NSAttributedString"/>
+        <attribute name="docText" optional="YES" attributeType="String"/>
+        <attribute name="docTitle" optional="YES" attributeType="String"/>
+        <attribute name="editTextSize" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="promptTextSize" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="proptSpeed" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="updateDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="docFont" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CustomFont" inverseName="docs" inverseEntity="CustomFont"/>
+        <relationship name="docSetRelation" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="DocSetRelation" inverseName="promptDoc" inverseEntity="DocSetRelation"/>
+    </entity>
+    <elements>
+        <element name="PromptDoc" positionX="-109.93359375" positionY="123.9453125" width="128" height="178"/>
+        <element name="DocSet" positionX="72" positionY="99" width="128" height="73"/>
+        <element name="DocSetRelation" positionX="81" positionY="108" width="128" height="88"/>
+        <element name="CustomFont" positionX="0" positionY="180" width="128" height="88"/>
+    </elements>
+</model>

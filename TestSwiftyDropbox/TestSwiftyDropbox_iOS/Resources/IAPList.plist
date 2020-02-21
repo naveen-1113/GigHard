@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>orderNo</key>
+		<integer>2</integer>
+		<key>IAPTitle</key>
+		<string>GIG RECORDING: Audio and Video Multitake Recording. Playback your Performance. No Ads.</string>
+		<key>IAPIdentifierPro</key>
+		<string>01_gig_pro</string>
+		<key>IAPIdentifierFree</key>
+		<string>01_gig_pro</string>
+		<key>IconFileName</key>
+		<string>icon_iaplogo.png</string>
+		<key>Audio</key>
+		<true/>
+		<key>Video</key>
+		<true/>
+		<key>Ads</key>
+		<true/>
+		<key>DownloadFile</key>
+		<string></string>
+		<key>itemPrice</key>
+		<string>$499.0</string>
+	</dict>
+	<dict>
+		<key>orderNo</key>
+		<integer>1</integer>
+		<key>IAPTitle</key>
+		<string>GIG SET LISTS: Set Lists &amp; Song Management. Arrange songs into Set Lists and Perform. No Ads.</string>
+		<key>IAPIdentifierPro</key>
+		<string>02_gig_pro</string>
+		<key>IAPIdentifierFree</key>
+		<string>02_gig_pro</string>
+		<key>IconFileName</key>
+		<string>icon_iaplogo.png</string>
+		<key>Audio</key>
+		<true/>
+		<key>Video</key>
+		<true/>
+		<key>Ads</key>
+		<true/>
+		<key>DownloadFile</key>
+		<string></string>
+		<key>itemPrice</key>
+		<string>$499.0</string>
+	</dict>
+	<dict>
+		<key>orderNo</key>
+		<integer>0</integer>
+		<key>IAPTitle</key>
+		<string>GIG PRO: Set Lists &amp; Song Management + Audio/Video Multitake Recording. No Ads.</string>
+		<key>IAPIdentifierPro</key>
+		<string>03_gig_pro</string>
+		<key>IAPIdentifierFree</key>
+		<string>03_gig_pro</string>
+		<key>IconFileName</key>
+		<string>icon_iaplogo.png</string>
+		<key>Audio</key>
+		<true/>
+		<key>Video</key>
+		<true/>
+		<key>Ads</key>
+		<true/>
+		<key>DownloadFile</key>
+		<string></string>
+		<key>itemPrice</key>
+		<string>$799.0</string>
+	</dict>
+</array>
+</plist>
